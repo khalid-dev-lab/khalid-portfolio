@@ -1,21 +1,21 @@
 export default function Home() {
   const projects = [
     {
-      title: "Project 1",
-      description: "Deskripsi project pertama Anda",
-      tech: "Next.js",
+      title: "Personal Portfolio",
+      description: "Website portfolio pribadi yang menampilkan karya dan keahlian",
+      tech: "Next.js & Tailwind CSS",
       link: "#",
     },
     {
-      title: "Project 2",
-      description: "Deskripsi project kedua Anda",
-      tech: "React",
+      title: "Landing Page",
+      description: "Halaman landing modern dengan desain responsif",
+      tech: "React & Tailwind CSS",
       link: "#",
     },
     {
-      title: "Project 3",
-      description: "Deskripsi project ketiga Anda",
-      tech: "HTML/CSS",
+      title: "Web App",
+      description: "Aplikasi web interaktif dengan fitur lengkap",
+      tech: "JavaScript & REST API",
       link: "#",
     },
   ];
@@ -24,13 +24,13 @@ export default function Home() {
     <main className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center min-h-screen px-4">
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-5xl font-bold mb-4 text-center">
           Hi, Saya <span className="text-blue-500">Khalid</span>
         </h1>
-        <p className="text-xl text-gray-300 mb-8">
-          Web Developer Portfolio
+        <p className="text-xl text-gray-300 mb-8 text-center">
+          Frontend Developer
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap justify-center">
           <a
             href="https://github.com/khalid-dev-lab"
             target="_blank"
@@ -45,6 +45,12 @@ export default function Home() {
           >
             LinkedIn
           </a>
+          <a
+            href="#projects"
+            className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition"
+          >
+            Lihat Karya
+          </a>
         </div>
       </section>
 
@@ -54,11 +60,13 @@ export default function Home() {
           Tentang <span className="text-blue-500">Saya</span>
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed text-center">
-          Saya adalah seorang web developer yang passionate dalam membangun
-          website yang indah dan fungsional. Saya fokus pada pengembangan
-          frontend menggunakan teknologi modern seperti React dan Next.js.
-          Saya senang belajar hal baru dan selalu bersemangat untuk
-          menciptakan pengalaman web yang luar biasa.
+          Saya adalah seorang frontend developer yang passionate dalam membangun
+          website yang indah, responsif, dan fungsional. Saya fokus pada
+          pengembangan frontend menggunakan teknologi modern seperti React,
+          Next.js, dan Tailwind CSS. Saya percaya bahwa desain yang baik dan
+          kode yang bersih adalah kunci untuk menciptakan pengalaman web yang
+          luar biasa. Saya senang belajar hal baru dan selalu bersemangat untuk
+          mengerjakan proyek yang menantang.
         </p>
       </section>
 
@@ -67,11 +75,11 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8 text-center">
           Keahlian <span className="text-blue-500">Saya</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Tailwind CSS'].map((skill) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Tailwind CSS', 'Git', 'Responsive Design'].map((skill) => (
             <div
               key={skill}
-              className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition"
+              className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 hover:scale-105 transition"
             >
               {skill}
             </div>
@@ -80,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-4 max-w-4xl mx-auto">
+      <section id="projects" className="py-20 px-4 max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">
           Proyek <span className="text-blue-500">Saya</span>
         </h2>
@@ -88,7 +96,7 @@ export default function Home() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition"
+              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 hover:scale-105 transition"
             >
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-3">{project.description}</p>
@@ -111,7 +119,8 @@ export default function Home() {
         </h2>
         <div className="text-center">
           <p className="text-gray-300 mb-6">
-            Tertarik bekerja sama atau punya pertanyaan?
+            Tertarik bekerja sama atau punya pertanyaan? Jangan ragu untuk
+            menghubungi saya melalui email di bawah ini.
           </p>
           <a
             href="mailto:khaliddev051@gmail.com"
