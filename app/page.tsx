@@ -60,7 +60,7 @@ export default function Home() {
           Tentang <span className="text-blue-500">Saya</span>
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed text-center">
-          Saya adalah seorang frontend developer yang passionate dalam membangun
+          Saya adalah seorang Frontend Developer & Web Designer yang passionate dalam membangun
           website yang indah, responsif, dan fungsional. Saya fokus pada
           pengembangan frontend menggunakan teknologi modern seperti React,
           Next.js, dan Tailwind CSS. Saya percaya bahwa desain yang baik dan
